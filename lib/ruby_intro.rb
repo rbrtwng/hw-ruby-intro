@@ -4,10 +4,18 @@
 
 def sum arr
   # YOUR CODE HERE
+  sum = 0
+  arr.each {|value| sum += value}
+  sum
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  sum = 0
+  arr.sort!.reverse!
+  sum += arr[0]
+  sum += arr[1]
+  sum
 end
 
 def sum_to_n? arr, n
@@ -33,3 +41,6 @@ end
 class BookInStock
 # YOUR CODE HERE
 end
+
+#puts sum [1,2,3]
+puts max_2_sum [1,2,3]
